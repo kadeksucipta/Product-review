@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100vh;
+}
+.card {
+    width: 40%;
+    height: 450px;
+    background-color: white;
+    column-count: 2;
+    border-radius: 10px;
+}
+img {
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+.logo {
+    width: 20px;
+    margin-right: 10px;
+}
+button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(22, 73, 22);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.body-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+h5 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 35px;
+    color: rgb(167, 167, 167);
+    font-weight: 500;
+    letter-spacing: 8px;
+}
+.title {
+    margin-top: 25px;
+    margin-right: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p {
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 23px;
+    color: rgb(167, 167, 167);
+}
+.price {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: rgb(26, 128, 82);
+    font-family: serif;
+}
+.strike {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    color: rgb(167, 167, 167);
+    margin-left: 20px;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 550px) {
+    img {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+        object-position: 50% 35%;
+    }
+    .card {
+        display: grid;
+        width: 90%;
+        height: auto;
+        column-count: none;
+    }
+    button {
+        height: 40px;
+    }
+    .logo {
+        height: auto;
+    }
+    h5 {
+        font-size: 17px;
+    }
+}
